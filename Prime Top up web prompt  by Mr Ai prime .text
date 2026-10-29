@@ -1,0 +1,292 @@
+You are an expert full-stack developer . Your task is to generate a fully working mobile & Deskop-first Gaming Top  web app called **"Prime Top Up"**, using ONLY the following technologies:
+✅ HTML  
+✅ Tailwind CSS  
+✅ JavaScript  
+✅ PHP  
+✅ MySQL DB  
+✅ AJAX  
+✅ Font Awesome (only for icons)
+
+NO external frameworks like React, Vue, Laravel, Bootstrap, jQuery, etc. should be used.  
+The design should resemble a real mobile application — user-friendly, responsive, and clean UI. All text selection, right-click, zoom in/out must be disabled using JavaScript.
+
+---
+
+## ✅ APP STRUCTURE OVERVIEW:
+
+📁 Root Folder  
+┣ 📁 common  
+┃ ┣ header.php  
+┃ ┣ sidebar.php  
+┃ ┣ bottom.php   
+┃ ┣ footer.php
+┃ ┗ config.php  
+┣ 📂 api
+┣Database.sql
+┃
+┣ 📁 mraiprime 
+┃ ┣ login.php  
+┃ ┣ index.php  
+┃ ┣ game.php  
+┃ ┣ product.php  
+┃ ┣ order.php  
+┃ ┣ order_detail.php  
+┃ ┣ user.php  
+┃ ┣ setting.php  
+┃ ┣ redeemcode.php
+┃ ┣ sliders.php
+┃ ┣ paymentmathod.php
+┃ ┗ 📁 common  
+┃   ┣ header.php  
+┃   ┣ sidebar.php  
+┃   ┗ bottom.php    
+┣ login.php  
+┣ index.php  
+┣ game.php
+┣ game_detail.php  
+┣ mycode.php  
+┣ instantpay.php
+┣ order.php  
+┣ profile.php  
+┣ install.php  
+┣ addmoney.php
+┗ .htaccess (optional) & README.md
+
+---
+
+## ✅ COMMON INCLUSIONS (User & Admin Panel)
+
+- `config.php` – one centralized DB connection (host: 127.0.0.1, user: root, pass: root)
+- `header.php` – contains the top navigation, logo,“Log in / Profile Icon & Wallet icon with balance”. 
+- `sidebar.php` – sliding mobile menu with 
+- `bottom.php` – fixed bottom navigation with icons (Home, Add Money ,My Orders,  My Codes, Profile)
+
+All UI components must use Tailwind classes only, and Font Awesome for icons.
+
+---
+
+## 🧑‍💻 USER PANEL – Pages Design & Functionality
+
+### 1. login.php
+- Design: Two tabs – Login and Sign Up in same file.
+- Fields with icon & animation : Email /Number, Password | Name, Phone number, Email, Password (for signup)
+- Use AJAX to verify user, show error/loading properly
+- On success, redirect to `index.php`
+
+---
+
+### 2. index.php (Homepage)
+- add a running marquee text banner at the top of the header that continuously scrolls from right to left. 
+- Display responsive image slider that automatically slides every 1.5 seconds (1500ms), with smooth transition animation.The slider should be full-width and mobile-friendly, using HTML, CSS, and JavaScript.”
+- Game Shop in card grid
+- Card: Game image/ Thumbnail, Game name (1 lines max, ellipsis if long) , 
+- Section title (“Game Shop”) 
+- “Add a floating Support icon (FAB) to my website — it should always stay at the bottom-right corner of the screen. The icon must have a bright color with a pulse or bounce animation to grab attention. When someone clicks it, it should instantly redirect to my custom support link (e.g., Telegram / WhatsApp / Call link).”
+***Add Footer Section like image **
+
+---
+
+### 4. game_detail.php
+- small main Game image at top with Game Name previews below it.
+- Select Recharge { like weekly 100 BDT, Monthly- 750 BDT ( Control / change by admin panel}
+- Quantity selector (− 1 +) styled clean & rounded.
+- Account Info {field : player id (uid) }
+- Payment Mathod { Wallet Pay & Instant Pay with Selected icon & hover animation }
+- You need to buy the product ….currency. 
+- button → Buy Now (button with slide hover animation. 
+- Product Description/ Rules & Conditions,  Smooth rounded buttons, drop shadow, perfect spacing.
+- Top 6 most popular Related products below scrollable. 
+
+---
+
+### 6. instantpay.php
+- Total Payment ( Bold)
+- Payment Method (add form admin panel):  instant payment mathod (like: BKash, Nagad, Binance etc.)
+- When the user clicks  instant Payment mathod (like : BKash, nagad etc.), show a new section  below the asking for:
+  “Admin Payment Qr Code Image Show” 
+  “Admin Number With Copy Button” 
+  “Payment Short Description(The description given by the admin will be written here.)” 
+  “Enter your Bkash(Method name) Number” (input field)
+  “Enter Transaction ID” (input field)
+  On submit: Create order → redirect to `order.php`
+
+---
+
+### 7. order.php  
+- Display user's past and current orders with a clean, modern, and mobile & deskop-first UI inspired by top up website   (tenbea,pipo bazar  etc.)
+- Each order appears in a card-style layout with product image(small icon / preview), name, and price visible upfront
+- On clicking a "View Details" or expandable section, show full item list and additional order info / history 
+- admin change  user order history ( pending / completed)
+- Each stage should have an icon, title, and a unique animation (like Amazon/Flipkart style)
+- Ensure transitions are smooth and mobile & deskop -friendly to give a native app & website feel
+-If order unipin voucher Code Redirect to “mycode.php” 
+---
+
+### 8. profile.php
+
+- Show with card grid and Edit : User Profile,  Name, Email, Phone, address
+- 4 cird gird : support pin, weekly Spent, Total Spent, Total Order
+- Account Information : Available Balance 
+- payment history ( Click,show open a new page & then all history with table. 
+- Change password section
+- Recent Order History Section. 
+- Logout button
+
+—
+
+
+###10. addmoney.php
+➤ Add Money : Enter amount fields & Click Here to Add Money Button. Click Button Redirect to “instantpay.php”
+➤ How to Add Money : Link with YouTube Video ( add by admin panel) 
+➤  If Add money Success from “instantpay.php” then  redirect to payment history page.
+
+###11. mycode.php 
+☞ My Codes:
+➤ Redeem Code Button : if click Redirect to “ https://shop.garena.my/app” 
+➤ Order History : If order unipin voucher Code Redirect to “mycode.php” & Auto Completed. & Redeem Code with Copy button.
+
+## ⚙️ ADMIN PANEL – Pages Design & Functions (/mraiprime for admin access)
+
+### 1. login.php
+- Simple login page for admin
+- Fields: Username (mraiprime) & Password(khfmhf2007)
+
+---
+
+### 2. index.php  (Admin Dashboard)
+- Mobile-app style Admin Dashboard with clean, modern & Portfolio UI  
+- Show quick stats using small Tailwind grid cards:
+  • Total Users, Total Pending, Total Game,Total Recharge , Total Sliders, Total Orders, Revenue, Active Products, Cancellations, Shipments  
+- Cards with icons, labels & numbers in vibrant, soft-shadow design  
+- Compact, responsive layout (2/3-column grid) for mobile and large screens  
+- Include quick-action buttons like “Add Recharge”, “Manage Users”, “Add Sliders”,  “Add Payment mathod ”,   “Add Game”,  “Manage Orders”,  “Setting”
+- Including Recent Orders History 
+- Smooth transitions and native app & website feel with proper spacing
+
+---
+
+### 3. game.php
+- Add/edit/delete category
+- Use AJAX CRUD
+- Game Name, Select Type { Uid Top Up/ Unipin Voucher(If you select Unipin voucher, the Account info field will not be available on the game details page.) }  “ Game Description / Rules & conditions “ & Upload image with each category/ game
+
+---
+
+### 4. product.php
+- Add/edit/delete products
+- Fields: Select Game, Product/ Recharge  Name, Selling Price. 
+- AJAX form submission with validation
+
+---
+
+### 5. order.php
+- Order list view
+- Columns: Order ID,  User, Amount, Status, Date & more payment details
+- Click to go to `order_detail.php`
+
+---
+
+### 6. order_detail.php
+- Show ordered items, quantity, user info with icon & unique card grid. 
+- Allow status update (via AJAX)
+
+---
+
+### 7. user.php
+- List all registered users
+- Delete or block users (if needed)
+
+---
+
+### 8. setting.php
+- Site Setting -   Home Page title/ site name ,  Site Description(The Description should be used as the meta description tag.), 
+- Update admin info/password
+- More fields - Currency code / symbol ,  FAB Direct Link, Add Money Youtube video Link.
+- running marquee text fields : Toggle (on/off), Short Description fields for text running.
+- admin username & password change fields with Update button. 
+
+---
+###10. sliders.php
+- Add/edit/delete Sliders
+- Fields: Image Upload,  Direct Link (optional).
+- AJAX form submission with validation
+
+---
+###11. paymentmathod.php
+- Add/edit/delete Payment Mathod
+- Fields: Payment Mathod Name , Payment Mathod Logo (optional,  but This will show instead of the payment method name when it uploads or is available.),  Payment QR Code Image Upload , Payment Number,   Short Description for payment
+- AJAX form submission with validation
+
+###12. redeemcode.php
+☞ Two Tabs : Redeem Code,  Expiry Code
+➤ Add/edit/delete Redeem Code. 
+➤ Fields : Select Game,  Select Recharge (Products / Recharge will be in the dropdown according to the game. ), Redeem Code 
+➤ If the Admin approves the order / completes it, the automatic code will expire and go to the Expiry Code tab.
+---
+
+## 🛠️ FEATURES TO IMPLEMENT:
+
+- AJAX-based **CRUD operations** everywhere
+- Simple square loading modal on actions (with animated dotted loader)
+- Reusable modals using Tailwind classes
+- Use as few files as possible — for example: `login.php` should contain both frontend+backend for login/signup
+- `install.php` must:
+  - Create database and all required tables
+  - Insert default admin credentials
+  - Create folders if needed (e.g., images)
+  - Redirect to login after install
+- Each popup must have a unique animated icon (success, error, warning, info, delete, confirm), smooth animation, clean typography, and responsive design (mobile + desktop). The design should look elegant, minimal, and professional for all users & admin panel .
+
+---
+
+
+## 📦 DATABASE SCHEMA (Install File Should Auto-Create)
+
+- users (id, name, phone, email, password, balance, created_at)
+- admin (id, username, password, last_login, created_at)
+- categories (id, name, type, description, image, created_at)
+- products (id, cat_id, name, description, price, stock, image, created_at)
+- sliders (id, image, link, created_at)
+- settings (id, site_name, site_title, site_description, currency_symbol, fab_link, youtube_link, marquee_status, marquee_text)
+- payment_methods (id, name, logo, qr_image, number, description, created_at)
+- wallet_topup (id, user_id, amount, method_id, sender_number, trx_id, status, created_at)
+- transactions (id, user_id, type, amount, note, created_at)
+- orders (id, user_id, total_amount, payment_method, status, created_at)
+- order_items (id, order_id, product_id, quantity, price)
+- redeem_codes (id, cat_id, product_id, code, status, created_at, used_at)
+- expired_codes (id, code, expired_at)
+- user_logs (id, user_id, action, ip_address, created_at)
+& more schema......
+---
+
+## 🔐 SMART  SECURITY & USER FRIENDLY EXPERIENCE
+
+- Disable right-click, text selection, zoom using JS
+- Use `overflow-hidden`, `select-none`, and custom JS
+- Validate all forms
+- Use PHP sessions for login tracking
+- Clean redirects on login/logout
+- Consistent color scheme and typography across app
+---
+
+(All pricing/revenue values should be displayed in Bangladeshi Taka  (৳) format.Admin Change Currency. 
+Your output should be a complete ready-to-run project, structured into pages and folders)
+
+## 🎁 FINAL DELIVERABLE:
+
+- Generate all required code files, folders, and placeholder assets/images as described above.  
+  For each file, clearly mention:
+  • The filename  
+  • The folder/directory where it should be saved  
+  • The complete source code/content of the file
+- All PHP files
+- Assets (e.g., placeholder images)
+- SQL inside `install.php`
+- Folder ready to upload on localhost or hosting
+- And of course, the design of my website's home page will be exactly like the uploaded image.
+- Admin panel design must be User-friendly Mobile & Deskop responsible Portfolio UI Design
+- Connect the admin panel to the user panel in such a way that after adding something (such as products, category, slider, setting etc.), it gets added to the user panel within 1 second or less and shows beautifully.
+- Observe this prompt again carefully, make sure that nothing is left out, from the smallest features, functions and designs. And pay the most attention to errors, write the code in such a way that not even 1 error comes. Write 100% perfect code.
+- And of course, don't write any separate js files.
+- Also, if any extra files are needed to make our website or app look better, add them. And I will use it on the local host of the Awebserver app on the mobile.
+- And this prompt will be observed like an expert, hardly.
