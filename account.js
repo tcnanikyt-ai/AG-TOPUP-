@@ -1,5 +1,5 @@
 // =======================================================
-// WEBSITE NAME (NICKNAME)
+// WEBSITE NAME (AG TOPUP)
 // =======================================================
 var website_name = "AG TOPUP";
 
@@ -24,3 +24,4 @@ var youtube_channel_link = "YouTube channel link";
 var notification_text = `সবথেকে কম দামে টপ করার জন্য সেরা ওয়েবসাইট
 ১০০% বিশ্বস্ত ও দ্রুত ডেলিভারিতে
 অর্ডার করুন নিশ্চিন্তে ♥️`;
+​<img src="[https://github.com/tcnanikyt-ai/AG-TOPUP-/commit/c3ddaa473ac7ccb14f1791b030f25e50ca8c7d27](https://github.com/tcnanikyt-ai/AG-TOPUP-/commit/c3ddaa473ac7ccb14f1791b030f25e50ca8c7d27)" alt="Logo" style="height: 40px;">
