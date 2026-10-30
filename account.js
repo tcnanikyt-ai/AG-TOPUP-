@@ -1,7 +1,7 @@
 // =======================================================
 // WEBSITE NAME (NICKNAME)
 // =======================================================
-var website_name = "YASIN";
+var website_name = "AG TOPUP";
 
 // =======================================================
 // TELEGRAM CHANNEL LINK
@@ -9,17 +9,17 @@ var website_name = "YASIN";
 var telegram_channel_link = "telegram channel link";
 
 // =======================================================
-// TELEGRAM GROUP LINK
+// t.me/anik2511
 // =======================================================
 var telegram_group_link = "telegram group link";
 
 // =======================================================
-// YOUTUBE CHANNEL LINK
+//t.me/anik2511
 // =======================================================
 var youtube_channel_link = "YouTube channel link";
 
 // =======================================================
-// NOTIFICATION TEXT
+//https://www.tiktok.com/@ag.anik.gaming.43?_r=1&_t=ZS-9866vvMHe69
 // =======================================================
 var notification_text = `সবথেকে কম দামে টপ করার জন্য সেরা ওয়েবসাইট
 ১০০% বিশ্বস্ত ও দ্রুত ডেলিভারিতে
